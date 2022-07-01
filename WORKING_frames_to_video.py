@@ -36,8 +36,7 @@ mean_height = int(mean_height / num_of_images)
 # print(mean_height)
 # print(mean_width)
 
-# Resizing of the images to give
-# them same width and height
+# Opening correct files in stored folder to resize frames
 for file in sorted(os.listdir('.'), key=len):
 	if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith("png"):
 		# opening image using PIL Image
